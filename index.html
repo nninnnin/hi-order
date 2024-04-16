@@ -1,10 +1,92 @@
 <html>
-	<head>
-	</head>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-	<body>
-		<div class='container'>
-			<h1>This is hi-order</h1>
-		</div>
-	</body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        font-size: 5vw;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+      }
+
+      h1 {
+        width: 100%;
+        margin: 1em 0;
+        text-align: center;
+      }
+
+      h2 {
+        margin: 0.5em;
+      }
+
+      ul {
+        margin-left: 0.5em;
+      }
+
+      li {
+        margin-left: 2em;
+        margin-top: 0.5em;
+      }
+
+      button {
+        font-size: 1em;
+
+        display: block;
+        margin: 0 auto;
+
+        outline: none;
+        border: none;
+      }
+
+      #order-button {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background-color: black;
+        color: white;
+        width: 100%;
+        padding: 1em;
+
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>저스틴 레스토랑</h1>
+
+      <h2>메뉴</h2>
+
+      <form>
+        <ul>
+          <li>카르보나라</li>
+          <li>스테이크</li>
+          <li>샐러드</li>
+          <li>와인</li>
+        </ul>
+      </form>
+
+      <button id="order-button">주문하기</button>
+    </div>
+
+    <script>
+      const orderButton = document.querySelector("#order-button");
+
+      orderButton.addEventListener("click", () => {
+        // ?
+      });
+    </script>
+  </body>
 </html>
